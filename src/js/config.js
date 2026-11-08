@@ -3,8 +3,8 @@
 export const APP = {
   nombre: 'RADAR FINANCIERO',
   subtitulo: 'Inteligencia financiera internacional',
-  version: '0.2.0',
-  fase: 2
+  version: '0.3.0',
+  fase: 3
 };
 
 export const CATEGORIAS = [
@@ -47,5 +47,9 @@ export const MENU_INFERIOR = ['dashboard', 'noticias', 'radar', 'crisis', 'favor
 
 export const RUTAS_DATOS = {
   noticias: `${import.meta.env.BASE_URL}data/news.json`,
-  fuentes: `${import.meta.env.BASE_URL}data/sources.json`
+  fuentes: `${import.meta.env.BASE_URL}data/sources.json`,
+  paises: `${import.meta.env.BASE_URL}data/countries.json`,
+  categorias: `${import.meta.env.BASE_URL}data/categories.json`,
+  estadoFuentes: `${import.meta.env.BASE_URL}data/sources-status.json`,
+  ultimaActualizacion: `${import.meta.env.BASE_URL}data/last-update.json`
 };

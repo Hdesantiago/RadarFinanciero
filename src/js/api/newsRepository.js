@@ -4,6 +4,32 @@
 
 import { RUTAS_DATOS } from '../config.js';
 
+// Adapta el modelo del recopilador (FASE 3, campos en inglés) al modelo
+// interno de la interfaz (campos en español). Mantiene compatibilidad con
+// los datos de demostración de la FASE 1.
+function adaptarNoticia(n) {
+  return {
+    id: n.id,
+    titulo: n.titulo ?? n.title ?? '',
+    resumen: n.resumen ?? n.summary ?? null,
+    fuente: n.fuente ?? n.sourceName ?? null,
+    url: n.url ?? n.sourceUrl ?? null,
+    publicadaEn: n.publicadaEn ?? n.publishedAt ?? null,
+    pais: n.pais ?? n.country ?? null,
+    region: n.region ?? null,
+    categoria: n.categoria ?? n.category ?? null,
+    relevancia: n.relevancia ?? n.relevanceScore ?? null,
+    pocoDifundida: n.pocoDifundida ?? n.isUnderreported ?? false,
+    motivoSeleccion: n.motivoSeleccion ?? null,
+    tipoContenido: n.tipoContenido ?? null,
+    esDemo: n.esDemo ?? false,
+    idioma: n.idioma ?? n.language ?? null,
+    palabrasClave: n.palabrasClave ?? n.keywords ?? [],
+    entidades: n.entidades ?? n.entities ?? [],
+    eventoRelacionado: n.eventoRelacionado ?? n.relatedEventId ?? null
+  };
+}
+
 export async function obtenerNoticias() {
   try {
     const respuesta = await fetch(RUTAS_DATOS.noticias, { cache: 'no-cache' });
@@ -11,8 +37,9 @@ export async function obtenerNoticias() {
       throw new Error(`HTTP ${respuesta.status}`);
     }
     const datos = await respuesta.json();
+    const crudas = Array.isArray(datos.noticias) ? datos.noticias : [];
     return {
-      noticias: Array.isArray(datos.noticias) ? datos.noticias : [],
+      noticias: crudas.map(adaptarNoticia),
       generadoEn: datos.generadoEn ?? null,
       esDemostracion: Boolean(datos.esDemostracion),
       avisoDemostracion: datos.avisoDemostracion ?? null,

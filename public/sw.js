@@ -8,7 +8,7 @@
  * y el alcance (scope) cubra todo el subdirectorio de GitHub Pages.
  */
 
-const VERSION = 'v2';
+const VERSION = 'v3';
 const SHELL_CACHE = `rf-shell-${VERSION}`;
 const DATA_CACHE = `rf-data-${VERSION}`;
 
@@ -24,7 +24,14 @@ const APP_SHELL = [
 
 // Catálogo de noticias y fuentes: precargados para lectura offline desde la
 // primera instalación y actualizados con estrategia network-first.
-const DATOS_PRECACHE = ['./data/news.json', './data/sources.json'];
+const DATOS_PRECACHE = [
+  './data/news.json',
+  './data/sources.json',
+  './data/countries.json',
+  './data/categories.json',
+  './data/sources-status.json',
+  './data/last-update.json'
+];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(

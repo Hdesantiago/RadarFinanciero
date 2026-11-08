@@ -4,30 +4,40 @@ RADAR FINANCIERO recopila información financiera internacional exclusivamente
 de **APIs públicas** y **feeds RSS oficiales o autorizados**. El catálogo
 completo está en [`public/data/sources.json`](../public/data/sources.json).
 
-## Fuentes objetivo
+> **Verificación:** las URLs siguientes fueron verificadas en noviembre de
+> 2026. Solo se listan como "activas" las fuentes que respondieron
+> correctamente sin clave de API.
 
-| ID | Fuente | Tipo | Región | Confiabilidad |
-|----|--------|------|--------|----------------|
-| `gdelt` | GDELT Project | API pública | Global | Media |
-| `fmi` | Fondo Monetario Internacional | RSS oficial | Global | Alta |
-| `banco-mundial` | Banco Mundial | RSS oficial | Global | Alta |
-| `bis` | Bank for International Settlements | RSS oficial | Global | Alta |
-| `bce` | Banco Central Europeo | RSS oficial | Zona euro | Alta |
-| `eurostat` | Eurostat | API pública | Unión Europea | Alta |
-| `banxico` | Banco de México | RSS oficial | México | Alta |
-| `fed` | Reserva Federal de EE. UU. | RSS oficial | Estados Unidos | Alta |
-| `us-treasury` | Departamento del Tesoro de EE. UU. | RSS oficial | Estados Unidos | Alta |
-| `sec` | SEC | RSS oficial | Estados Unidos | Alta |
-| `calificadoras` | Agencias de calificación (información pública) | Comunicados | Global | Alta |
-| `medios-especializados` | Medios económicos con RSS autorizado | RSS | Global | Media |
+## Fuentes activas (verificadas)
+
+| ID | Fuente | URL del feed | Tipo | Región | Confiabilidad | Limitaciones |
+|----|--------|--------------|------|--------|----------------|--------------|
+| `gdelt` | GDELT Project | `https://api.gdeltproject.org/api/v2/doc/doc` | API pública (JSON) | Global | Media | Rate-limit agresivo (HTTP 429); reintentos con backoff |
+| `bce` | Banco Central Europeo | `https://www.ecb.europa.eu/rss/press.html` | RSS 2.0 | Zona euro | Alta | Sin paginación; últimos comunicados |
+| `fed` | Reserva Federal de EE. UU. | `https://www.federalreserve.gov/feeds/press_all.xml` | RSS 2.0 | Estados Unidos | Alta | Feed combinado de todos los comunicados |
+| `sec` | SEC | `https://www.sec.gov/news/pressreleases.rss` | RSS 2.0 | Estados Unidos | Alta | Exige User-Agent identificable; rate limit 10 req/s |
+| `bis` | Bank for International Settlements | `https://www.bis.org/rss.xml` | RSS 2.0 | Global | Alta | Feed genérico del sitio (no solo prensa) |
+
+## Fuentes sin RSS público verificable
+
+Las siguientes fuentes **no disponen de un feed RSS o API pública de
+noticias accesible sin autenticación** en la fecha de verificación. Quedan
+documentadas como no disponibles hasta que exista un endpoint estable:
+
+| Fuente | Motivo | Alternativa |
+|--------|--------|-------------|
+| FMI | RSS discontinuado en el rediseño del sitio | Endpoint JSON propietario `imf.org/en/news/index.json` (no documentado como API formal) |
+| Banco Mundial | Sitio migrado a AEM; sin RSS visible | API de datos abiertos `api.worldbank.org` (series estadísticas, no noticias) |
+| Eurostat | RSS redirige a EU Login (ECAS) | API REST estadística pública (no es feed de noticias) |
+| Banxico | Sin RSS público encontrado | SIE requiere token/API key |
+| U.S. Treasury | Sin RSS visible en la página de prensa | — |
 
 ## Reglas de uso
 
 - **Sin claves privadas en el navegador.** Ninguna API que requiera secretos
   se consulta desde el frontend.
-- **Sin proxies CORS públicos.** Las fuentes que no permiten solicitudes
-  directas desde el navegador se recopilan en **GitHub Actions** (FASE 3) y
-  se publican como `data/news.json` estático.
+- **Sin proxies CORS públicos.** Las fuentes se recopilan en **GitHub
+  Actions** y se publican como `data/news.json` estático.
 - **Sin contenido protegido.** Solo se almacenan metadatos, descripciones y
   extractos autorizados; siempre se enlaza a la fuente original.
 - **Tolerancia a fallos.** El error de una fuente individual no detiene la
@@ -46,6 +56,6 @@ completo está en [`public/data/sources.json`](../public/data/sources.json).
   "region": "País o región",
   "categorias": ["Categorías financieras asociadas"],
   "confiabilidad": "Alta | Media",
-  "estado": "Activa | Pendiente de activación | Excluida"
+  "estado": "Activa | No disponible | Excluida"
 }
 ```

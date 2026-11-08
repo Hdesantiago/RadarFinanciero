@@ -1,6 +1,6 @@
 {
   "name": "radar-financiero",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "RADAR FINANCIERO — Inteligencia financiera internacional. PWA 100% frontend publicada en GitHub Pages.",
   "type": "module",
   "license": "MIT",
@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "generate:icons": "node scripts/generate-icons.js"
+    "generate:icons": "node scripts/generate-icons.js",
+    "collect:news": "node scripts/collect-news.js",
+    "test:collector": "node scripts/test-collector.js"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
