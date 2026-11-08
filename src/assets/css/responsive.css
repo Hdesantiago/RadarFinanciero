@@ -1,0 +1,64 @@
+/*
+ * RADAR FINANCIERO — Ajustes responsivos (Mobile First).
+ */
+
+/* Teléfonos pequeños */
+@media (max-width: 575.98px) {
+  .rf-encabezado-pagina h1 {
+    font-size: 1.25rem;
+  }
+
+  .rf-stat-valor {
+    font-size: 1.4rem;
+  }
+
+  .rf-stat-valor-sm {
+    font-size: 0.85rem;
+  }
+
+  .rf-grafica-contenedor {
+    height: 260px;
+  }
+
+  .rf-card-title {
+    font-size: 0.98rem;
+  }
+}
+
+/* Tabletas */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .rf-grafica-contenedor {
+    height: 300px;
+  }
+}
+
+/* Escritorio */
+@media (min-width: 992px) {
+  .rf-bottomnav {
+    display: none !important;
+  }
+
+  .rf-main {
+    padding-bottom: 3rem;
+  }
+}
+
+/* Pantallas muy anchas: limitar longitud de línea para legibilidad */
+@media (min-width: 1400px) {
+  .rf-main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Respeto a usuarios con movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

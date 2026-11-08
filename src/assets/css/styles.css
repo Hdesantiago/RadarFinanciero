@@ -1,0 +1,427 @@
+/*
+ * RADAR FINANCIERO — Tema oscuro tipo terminal financiera.
+ * Inspiración: Bloomberg / terminales de datos. Mobile First.
+ */
+
+:root {
+  --rf-bg: #0b1220;
+  --rf-bg-2: #0f1729;
+  --rf-card: #131c30;
+  --rf-border: #22304d;
+  --rf-text: #e6edf7;
+  --rf-muted: #8fa1bd;
+  --rf-accent: #f0b90b;
+  --rf-green: #22c55e;
+  --rf-red: #ef4444;
+  --rf-purple: #a78bfa;
+  --rf-topbar-h: 56px;
+  --rf-sidebar-w: 264px;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--rf-bg);
+  color: var(--rf-text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-rf-muted {
+  color: var(--rf-muted) !important;
+}
+
+/* ---------- Barra superior ---------- */
+
+.rf-topbar {
+  background: rgba(11, 18, 32, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rf-border);
+  min-height: var(--rf-topbar-h);
+}
+
+.rf-brand {
+  color: var(--rf-accent) !important;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.rf-btn-icono {
+  color: var(--rf-text);
+  border: 1px solid var(--rf-border);
+}
+
+.rf-btn-icono:hover {
+  color: var(--rf-accent);
+  border-color: var(--rf-accent);
+}
+
+.rf-btn-instalar {
+  background: var(--rf-accent);
+  color: #0b1220;
+  font-weight: 600;
+}
+
+.rf-btn-instalar:hover {
+  background: #ffd24d;
+  color: #0b1220;
+}
+
+.rf-badge-online {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--rf-green);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+.rf-badge-offline {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--rf-red);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+/* ---------- Menú lateral ---------- */
+
+.rf-sidebar {
+  background: var(--rf-bg-2);
+  border-right: 1px solid var(--rf-border);
+  width: var(--rf-sidebar-w);
+}
+
+.rf-sidebar-header .rf-brand {
+  font-size: 0.95rem;
+}
+
+.rf-menu {
+  padding: 0.5rem 0;
+}
+
+.rf-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--rf-muted);
+  padding: 0.65rem 1rem;
+  border-left: 3px solid transparent;
+  font-size: 0.95rem;
+}
+
+.rf-menu-link:hover,
+.rf-menu-link:focus {
+  color: var(--rf-text);
+  background: rgba(240, 185, 11, 0.05);
+}
+
+.rf-menu-link.active {
+  color: var(--rf-accent);
+  background: rgba(240, 185, 11, 0.1);
+  border-left-color: var(--rf-accent);
+}
+
+.rf-menu-link .bi {
+  font-size: 1.05rem;
+}
+
+.rf-sidebar-footer {
+  border-top: 1px solid var(--rf-border);
+}
+
+@media (min-width: 992px) {
+  .rf-sidebar.offcanvas-lg {
+    position: fixed;
+    top: var(--rf-topbar-h);
+    bottom: 0;
+    left: 0;
+    transform: none !important;
+    visibility: visible !important;
+  }
+
+  .rf-main {
+    margin-left: var(--rf-sidebar-w);
+  }
+}
+
+/* ---------- Contenido principal ---------- */
+
+.rf-main {
+  padding: calc(var(--rf-topbar-h) + 1.25rem) 1rem 6rem;
+  min-height: 100vh;
+}
+
+@media (min-width: 992px) {
+  .rf-main {
+    padding: calc(var(--rf-topbar-h) + 1.5rem) 2rem 3rem;
+  }
+}
+
+.rf-encabezado-pagina h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.rf-encabezado-pagina h1 .bi {
+  color: var(--rf-accent);
+}
+
+.rf-cargando {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+/* ---------- Tarjetas ---------- */
+
+.rf-card {
+  background: var(--rf-card);
+  border: 1px solid var(--rf-border);
+  border-radius: 0.75rem;
+  color: var(--rf-text);
+}
+
+.rf-card-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.rf-card-resumen {
+  color: var(--rf-muted);
+  font-size: 0.9rem;
+}
+
+.rf-card-footer {
+  border-top: 1px solid var(--rf-border);
+  padding-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.rf-enlace-fuente {
+  color: var(--rf-accent);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.rf-enlace-fuente:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Insignias ---------- */
+
+.rf-badge-categoria {
+  background: rgba(240, 185, 11, 0.12);
+  color: var(--rf-accent);
+  border: 1px solid rgba(240, 185, 11, 0.35);
+  font-weight: 500;
+}
+
+.rf-badge-pais {
+  background: rgba(143, 161, 189, 0.12);
+  color: var(--rf-muted);
+  border: 1px solid var(--rf-border);
+  font-weight: 500;
+}
+
+.rf-badge-radar {
+  background: rgba(34, 197, 94, 0.12);
+  color: var(--rf-green);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  font-weight: 500;
+}
+
+.rf-badge-demo {
+  background: rgba(167, 139, 250, 0.15);
+  color: var(--rf-purple);
+  border: 1px solid rgba(167, 139, 250, 0.45);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.rf-badge-conteo {
+  background: var(--rf-bg-2);
+  color: var(--rf-muted);
+  border: 1px solid var(--rf-border);
+}
+
+/* ---------- Relevancia ---------- */
+
+.rf-relevancia {
+  margin: 0.5rem 0;
+}
+
+.rf-relevancia-barra {
+  height: 6px;
+  background: var(--rf-bg-2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.rf-relevancia-valor {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.rf-relevancia-alta .rf-relevancia-valor {
+  background: var(--rf-red);
+}
+
+.rf-relevancia-media .rf-relevancia-valor {
+  background: var(--rf-accent);
+}
+
+.rf-relevancia-baja .rf-relevancia-valor {
+  background: var(--rf-green);
+}
+
+.rf-motivo {
+  font-size: 0.8rem;
+  color: var(--rf-muted);
+  border-left: 3px solid var(--rf-border);
+  padding-left: 0.6rem;
+}
+
+/* ---------- Estadísticas ---------- */
+
+.rf-stat .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.rf-stat-icono {
+  color: var(--rf-accent);
+  font-size: 1.25rem;
+}
+
+.rf-stat-valor {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.rf-stat-valor-sm {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.rf-stat-etiqueta {
+  color: var(--rf-muted);
+  font-size: 0.8rem;
+}
+
+/* ---------- Secciones ---------- */
+
+.rf-seccion {
+  margin-top: 2rem;
+}
+
+.rf-seccion-icono {
+  color: var(--rf-accent);
+  font-size: 1.15rem;
+}
+
+.rf-seccion-titulo {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ---------- Chips de países ---------- */
+
+.rf-chip-pais {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--rf-bg-2);
+  border: 1px solid var(--rf-border);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+  color: var(--rf-text);
+}
+
+.rf-chip-conteo {
+  background: var(--rf-accent);
+  color: #0b1220;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.05rem 0.45rem;
+}
+
+/* ---------- Alertas ---------- */
+
+.rf-alert-demo {
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.45);
+  color: var(--rf-text);
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+}
+
+.rf-alert-demo .bi {
+  color: var(--rf-purple);
+  font-size: 1.2rem;
+}
+
+.rf-alert-error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.45);
+  color: var(--rf-text);
+  border-radius: 0.75rem;
+}
+
+/* ---------- Gráficas ---------- */
+
+.rf-grafica-contenedor {
+  position: relative;
+  height: 320px;
+}
+
+/* ---------- Placeholder de módulos ---------- */
+
+.rf-placeholder-icono {
+  font-size: 3rem;
+  color: var(--rf-accent);
+}
+
+/* ---------- Navegación inferior (móvil) ---------- */
+
+.rf-bottomnav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background: var(--rf-bg-2);
+  border-top: 1px solid var(--rf-border);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  z-index: 1030;
+}
+
+.rf-bottom-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  color: var(--rf-muted);
+  text-decoration: none;
+  font-size: 0.68rem;
+  padding: 0.5rem 0.25rem;
+  flex: 1;
+}
+
+.rf-bottom-link .bi {
+  font-size: 1.15rem;
+}
+
+.rf-bottom-link.active {
+  color: var(--rf-accent);
+}

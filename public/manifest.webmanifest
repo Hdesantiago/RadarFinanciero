@@ -1,0 +1,36 @@
+{
+  "name": "RADAR FINANCIERO",
+  "short_name": "Radar Financiero",
+  "description": "Inteligencia financiera internacional: noticias financieras poco difundidas, seguimiento por país y lectura offline.",
+  "lang": "es",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "portrait-primary",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "categories": ["finance", "news", "business"],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

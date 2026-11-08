@@ -1,0 +1,126 @@
+{
+  "actualizadoEn": "2026-11-08T00:00:00Z",
+  "nota": "Catálogo de fuentes objetivo. Los conectores se implementan en la FASE 3 mediante GitHub Actions; ninguna fuente requiere claves privadas en el navegador.",
+  "fuentes": [
+    {
+      "id": "gdelt",
+      "nombre": "GDELT Project",
+      "url": "https://www.gdeltproject.org/",
+      "tipo": "API pública",
+      "region": "Global",
+      "categorias": ["Economía mundial", "Mercados financieros", "Riesgo sistémico"],
+      "confiabilidad": "Media",
+      "estado": "Pendiente de activación (Fase 3)"
+    },
+    {
+      "id": "fmi",
+      "nombre": "Fondo Monetario Internacional",
+      "url": "https://www.imf.org/es/News",
+      "tipo": "RSS oficial",
+      "region": "Global",
+      "categorias": ["Crisis de deuda soberana", "Endeudamiento público", "Reservas internacionales"],
+      "confiabilidad": "Alta",
+      "estado": "Pendiente de activación (Fase 3)"
+    },
+    {
+      "id": "banco-mundial",
+      "nombre": "Banco Mundial",
+      "url": "https://www.bancomundial.org/es/news",
+      "tipo": "RSS oficial",
+      "region": "Global",
+      "categorias": ["Endeudamiento público", "Economía mundial", "Comercio internacional"],
+      "confiabilidad": "Alta",
+      "estado": "Pendiente de activación (Fase 3)"
+    },
+    {
+      "id": "bis",
+      "nombre": "Bank for International Settlements",
+      "url": "https://www.bis.org/",
+      "tipo": "RSS oficial",
+      "region": "Global",
+      "categorias": ["Bancos centrales", "Riesgo sistémico", "Regulación financiera"],
+      "confiabilidad": "Alta",
+      "estado": "Pendiente de activación (Fase 3)"
+    },
+    {
+      "id": "bce",
+      "nombre": "Banco Central Europeo",
+      "url": "https://www.ecb.europa.eu/",
+      "tipo": "RSS oficial",
+      "region": "Zona euro",
+      "categorias": ["Bancos centrales", "Tasas de interés", "Inflación"],
+      "confiabilidad": "Alta",
+      "estado": "Pendiente de activación (Fase 3)"
+    },
+    {
+      "id": "eurostat",
+      "nombre": "Eurostat",
+      "url": "https://ec.europa.eu/eurostat",
+      "tipo": "API pública",
+      "region": "Unión Europea",
+      "categorias": ["Inflación", "Déficit fiscal", "Economía mundial"],
+      "confiabilidad": "Alta",
+      "estado": "Pendiente de activación (Fase 3)"
+    },
+    {
+      "id": "banxico",
+      "nombre": "Banco de México",
+      "url": "https://www.banxico.org.mx/",
+      "tipo": "RSS oficial",
+      "region": "México",
+      "categorias": ["Bancos centrales", "Tasas de interés", "Devaluaciones"],
+      "confiabilidad": "Alta",
+      "estado": "Pendiente de activación (Fase 3)"
+    },
+    {
+      "id": "fed",
+      "nombre": "Reserva Federal de Estados Unidos",
+      "url": "https://www.federalreserve.gov/",
+      "tipo": "RSS oficial",
+      "region": "Estados Unidos",
+      "categorias": ["Bancos centrales", "Tasas de interés", "Bonos soberanos"],
+      "confiabilidad": "Alta",
+      "estado": "Pendiente de activación (Fase 3)"
+    },
+    {
+      "id": "us-treasury",
+      "nombre": "Departamento del Tesoro de EE. UU.",
+      "url": "https://home.treasury.gov/",
+      "tipo": "RSS oficial",
+      "region": "Estados Unidos",
+      "categorias": ["Bonos soberanos", "Endeudamiento público", "Sanciones financieras"],
+      "confiabilidad": "Alta",
+      "estado": "Pendiente de activación (Fase 3)"
+    },
+    {
+      "id": "sec",
+      "nombre": "Comisión de Bolsa y Valores de EE. UU. (SEC)",
+      "url": "https://www.sec.gov/",
+      "tipo": "RSS oficial",
+      "region": "Estados Unidos",
+      "categorias": ["Regulación financiera", "Finanzas corporativas", "Mercados financieros"],
+      "confiabilidad": "Alta",
+      "estado": "Pendiente de activación (Fase 3)"
+    },
+    {
+      "id": "calificadoras",
+      "nombre": "Agencias de calificación crediticia (información pública)",
+      "url": "https://www.spglobal.com/ratings/es/",
+      "tipo": "Comunicados públicos",
+      "region": "Global",
+      "categorias": ["Bonos soberanos", "Crisis de deuda soberana", "Finanzas corporativas"],
+      "confiabilidad": "Alta",
+      "estado": "Pendiente de activación (Fase 3)"
+    },
+    {
+      "id": "medios-especializados",
+      "nombre": "Medios económicos especializados (RSS autorizado)",
+      "url": "https://www.ft.com/",
+      "tipo": "RSS autorizado",
+      "region": "Global",
+      "categorias": ["Mercados financieros", "Petróleo y materias primas", "Inteligencia artificial y economía"],
+      "confiabilidad": "Media",
+      "estado": "Pendiente de activación (Fase 3)"
+    }
+  ]
+}

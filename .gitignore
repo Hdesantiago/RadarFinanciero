@@ -1,0 +1,38 @@
+# Dependencias
+node_modules/
+
+# Compilación
+dist/
+dist-ssr/
+*.local
+
+# Caché de Vite
+.vite/
+
+# Registros
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Entorno (nunca subir secretos)
+.env
+.env.*
+!.env.example
+
+# Editores
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
