@@ -18,8 +18,11 @@ Android, iPhone, Windows y macOS.
 - 🗂️ **20 categorías financieras**: crisis de deuda soberana, bancos
   centrales, inflación, bonos soberanos, devaluaciones, entre otras.
 - 🌎 **Expedientes por país** con cronología (FASE 4/5).
-- ⭐ **Favoritos y biblioteca local** con IndexedDB, disponibles offline
-  (FASE 2).
+- ⭐ **Favoritos y Mi biblioteca** con IndexedDB: guardar, buscar, ordenar y
+  eliminar con confirmación; disponibles **sin conexión**.
+- 📖 **Historial de lectura** y **países seguidos** en Configuración.
+- 🔌 **Modo offline**: el detalle de cada noticia indica si el resumen está
+  guardado en el dispositivo o si podría no estar disponible.
 - 📤 **Compartir** vía Web Share API, X y WhatsApp (FASE 6).
 - 🌙 Interfaz oscura tipo terminal financiera, responsive y Mobile First.
 - ♿ Completamente en español.
@@ -35,8 +38,9 @@ GitHub Actions (cada 6 h) ──► data/news.json ──► GitHub Pages ──
 - **Sin backend ni servidores propios.** El frontend lee `data/news.json`,
   generado por un proceso Node.js en GitHub Actions (FASE 3).
 - **Sin secretos en el navegador.** Solo APIs públicas y RSS oficiales.
-- **Almacenamiento local** con IndexedDB (FASE 2); nada se comparte entre
-  dispositivos.
+- **Almacenamiento local** con IndexedDB (`RadarFinancieroDB`, 6 almacenes
+  versionados); nada se comparte entre dispositivos. Ver
+  [docs/almacenamiento.md](docs/almacenamiento.md).
 
 ## Estructura del proyecto
 
@@ -57,8 +61,8 @@ GitHub Actions (cada 6 h) ──► data/news.json ──► GitHub Pages ──
 │       ├── config.js           # Configuración y categorías
 │       ├── api/                # Repositorios de datos estáticos
 │       ├── services/           # Lógica de negocio por fases
-│       ├── storage/            # IndexedDB (FASE 2)
-│       ├── components/         # Tarjetas, navegación, dashboard
+│       ├── storage/            # IndexedDB: RadarFinancieroDB (6 almacenes)
+│       ├── components/         # Tarjetas, detalle, navegación, diálogos
 │       └── pages/              # Vistas por módulo
 ├── scripts/                    # Recopilador Node.js (FASE 3) e iconos
 ├── docs/                       # Fuentes, PWA e instalación móvil
@@ -120,15 +124,16 @@ otros). Detalles en [docs/fuentes.md](docs/fuentes.md).
 | Fase | Contenido | Estado |
 |------|-----------|--------|
 | 1 | Proyecto Vite, estructura, diseño, manifest, Service Worker, GitHub Pages, README | ✅ Completada |
-| 2 | IndexedDB, favoritos, biblioteca, modo offline | ⏳ Pendiente |
+| 2 | IndexedDB, favoritos, biblioteca, historial, modo offline | ✅ Completada |
 | 3 | Recopilador Node.js, GDELT, RSS oficiales, `news.json`, Actions cada 6 h | ⏳ Pendiente |
 | 4 | Dashboard completo, noticias, filtros, países, categorías, búsqueda | ⏳ Pendiente |
 | 5 | UNDERREPORTED RADAR, agrupación, puntuación, cronologías | ⏳ Pendiente |
 | 6 | Compartir (X, WhatsApp), experiencia móvil, pruebas, publicación | ⏳ Pendiente |
 
-> **Nota de la FASE 1:** las noticias mostradas son **datos de demostración
+> **Nota (FASES 1-2):** las noticias mostradas son **datos de demostración
 > claramente identificados** (insignia `DEMO` y aviso en el dashboard). No
-> corresponden a acontecimientos reales.
+> corresponden a acontecimientos reales. El recopilador automático llega en
+> la FASE 3.
 
 ## Reglas del proyecto
 

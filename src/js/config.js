@@ -3,8 +3,8 @@
 export const APP = {
   nombre: 'RADAR FINANCIERO',
   subtitulo: 'Inteligencia financiera internacional',
-  version: '0.1.0',
-  fase: 1
+  version: '0.2.0',
+  fase: 2
 };
 
 export const CATEGORIAS = [

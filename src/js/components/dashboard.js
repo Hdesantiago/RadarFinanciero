@@ -46,7 +46,7 @@ export function crearEstadisticas({ totalNoticias, totalFuentes, totalPaises, ac
     </div>`;
 }
 
-export function crearSeccion({ titulo, icono, noticias, idAncla }) {
+export function crearSeccion({ titulo, icono, noticias, idAncla, estados }) {
   if (!noticias.length) {
     return '';
   }
@@ -61,8 +61,8 @@ export function crearSeccion({ titulo, icono, noticias, idAncla }) {
         ${noticias
           .map(
             (n) => `
-            <div class="col-12 col-md-6 col-xl-4">
-              ${crearTarjetaNoticia(n)}
+            <div class="col-12 col-md-6 col-xl-4 rf-col-noticia">
+              ${crearTarjetaNoticia(n, { ...(estados?.get(n.id) ?? {}), contexto: 'catalogo' })}
             </div>`
           )
           .join('')}

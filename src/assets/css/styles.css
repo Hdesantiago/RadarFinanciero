@@ -425,3 +425,252 @@ body {
 .rf-bottom-link.active {
   color: var(--rf-accent);
 }
+
+/* ---------- Acciones de tarjetas (botones táctiles) ---------- */
+
+.rf-card-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.6rem 0;
+}
+
+.rf-btn-tarjeta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--rf-bg-2);
+  border: 1px solid var(--rf-border);
+  color: var(--rf-muted);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.65rem;
+  font-size: 0.85rem;
+  min-height: 40px;
+  min-width: 40px;
+  cursor: pointer;
+}
+
+.rf-btn-tarjeta:hover,
+.rf-btn-tarjeta:focus-visible {
+  color: var(--rf-accent);
+  border-color: var(--rf-accent);
+}
+
+.rf-btn-tarjeta.active {
+  color: var(--rf-accent);
+  border-color: var(--rf-accent);
+  background: rgba(240, 185, 11, 0.12);
+}
+
+.rf-btn-tarjeta.rf-guardada-active {
+  color: var(--rf-green);
+  border-color: rgba(34, 197, 94, 0.5);
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.rf-btn-tarjeta.rf-btn-peligro:hover,
+.rf-btn-tarjeta.rf-btn-peligro:focus-visible {
+  color: var(--rf-red);
+  border-color: var(--rf-red);
+}
+
+.rf-badge-guardada {
+  background: rgba(34, 197, 94, 0.12);
+  color: var(--rf-green);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  font-weight: 500;
+}
+
+.rf-card-titulo-btn {
+  background: none;
+  border: 0;
+  color: inherit;
+  text-align: left;
+  padding: 0;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.rf-card-titulo-btn:hover {
+  color: var(--rf-accent);
+}
+
+/* ---------- Toasts ---------- */
+
+.rf-toasts {
+  position: fixed;
+  bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  width: min(92vw, 26rem);
+}
+
+@media (min-width: 992px) {
+  .rf-toasts {
+    bottom: 1.5rem;
+  }
+}
+
+.rf-toast {
+  background: var(--rf-card);
+  border: 1px solid var(--rf-border);
+  color: var(--rf-text);
+  width: 100%;
+}
+
+.rf-toast-exito .bi {
+  color: var(--rf-green);
+}
+
+.rf-toast-error .bi {
+  color: var(--rf-red);
+}
+
+.rf-toast-info .bi {
+  color: var(--rf-accent);
+}
+
+/* ---------- Modal oscuro ---------- */
+
+.rf-modal .modal-content {
+  background: var(--rf-card);
+  border: 1px solid var(--rf-border);
+  color: var(--rf-text);
+}
+
+.rf-modal .modal-header,
+.rf-modal .modal-footer {
+  border-color: var(--rf-border);
+}
+
+.rf-detalle-resumen {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.rf-detalle-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-bottom: 0;
+}
+
+.rf-detalle-meta dt {
+  color: var(--rf-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rf-detalle-meta dd {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ---------- Alertas offline ---------- */
+
+.rf-alert-offline {
+  background: rgba(240, 185, 11, 0.08);
+  border: 1px solid rgba(240, 185, 11, 0.4);
+  color: var(--rf-text);
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.rf-alert-offline-ok {
+  border-color: rgba(34, 197, 94, 0.4);
+  background: rgba(34, 197, 94, 0.08);
+}
+
+/* ---------- Listas (historial) ---------- */
+
+.rf-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rf-lista-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--rf-bg-2);
+  border: 1px solid var(--rf-border);
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.8rem;
+}
+
+/* ---------- Chips removibles ---------- */
+
+.rf-chip-btn {
+  background: none;
+  border: 0;
+  color: var(--rf-muted);
+  padding: 0 0 0 0.15rem;
+  cursor: pointer;
+}
+
+.rf-chip-btn:hover {
+  color: var(--rf-red);
+}
+
+/* ---------- Estados vacíos ---------- */
+
+.rf-vacio {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--rf-muted);
+}
+
+.rf-vacio .bi {
+  font-size: 2.5rem;
+  color: var(--rf-accent);
+}
+
+.rf-contador {
+  font-size: 0.85rem;
+}
+
+/* ---------- Controles de formulario en tema oscuro ---------- */
+
+.form-control,
+.form-select {
+  background-color: var(--rf-bg-2);
+  border-color: var(--rf-border);
+  color: var(--rf-text);
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--rf-bg-2);
+  border-color: var(--rf-accent);
+  color: var(--rf-text);
+  box-shadow: 0 0 0 0.2rem rgba(240, 185, 11, 0.15);
+}
+
+.form-control::placeholder {
+  color: var(--rf-muted);
+}
+
+.form-check-input {
+  background-color: var(--rf-bg-2);
+  border-color: var(--rf-border);
+}
+
+.form-check-input:checked {
+  background-color: var(--rf-accent);
+  border-color: var(--rf-accent);
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 185, 11, 0.15);
+  border-color: var(--rf-accent);
+}

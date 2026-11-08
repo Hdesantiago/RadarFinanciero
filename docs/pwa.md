@@ -33,8 +33,12 @@ Windows y macOS.
 
 ## Alcance del modo offline
 
-- ✅ Abrir la aplicación y consultar las noticias descargadas en caché.
-- ✅ Favoritos y biblioteca local (a partir de la FASE 2, con IndexedDB).
+- ✅ Abrir la aplicación y consultar el catálogo de noticias en caché
+  (`data/news.json`, network-first con respaldo).
+- ✅ Favoritos, Mi biblioteca, historial de lectura, investigaciones
+  guardadas, países seguidos y ajustes (IndexedDB, desde la FASE 2).
+- ✅ El detalle de una noticia indica si el resumen está guardado y
+  disponible offline, o si el contenido podría no estarlo.
 - ❌ Los artículos originales en sitios externos **requieren conexión**;
   la app nunca promete lectura offline de páginas de terceros.
 

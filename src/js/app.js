@@ -14,7 +14,10 @@ import { renderCrisis } from './pages/crisis.js';
 import { renderPaises } from './pages/countries.js';
 import { renderInvestigaciones } from './pages/research.js';
 import { renderFavoritos } from './pages/favorites.js';
+import { renderBiblioteca } from './pages/biblioteca.js';
+import { renderConfiguracion } from './pages/configuracion.js';
 import { renderPlaceholder } from './pages/placeholder.js';
+import { inicializarAccionesNoticias } from './components/newsActions.js';
 
 const RUTAS = {
   dashboard: renderDashboard,
@@ -30,20 +33,8 @@ const RUTAS = {
   paises: renderPaises,
   investigaciones: renderInvestigaciones,
   favoritos: renderFavoritos,
-  biblioteca: (c) =>
-    renderPlaceholder(c, {
-      titulo: 'Mi biblioteca',
-      icono: 'bi-collection',
-      descripcion: 'Noticias e investigaciones guardadas con metadatos y extractos autorizados.',
-      fase: 2
-    }),
-  configuracion: (c) =>
-    renderPlaceholder(c, {
-      titulo: 'Configuración',
-      icono: 'bi-gear',
-      descripcion: 'Preferencias de la aplicación y países seguidos.',
-      fase: 2
-    })
+  biblioteca: renderBiblioteca,
+  configuracion: renderConfiguracion
 };
 
 function renderEstructura() {
@@ -147,6 +138,7 @@ function configurarEstadoConexion() {
 
 renderEstructura();
 renderNavegacion();
+inicializarAccionesNoticias();
 enrutar();
 window.addEventListener('hashchange', enrutar);
 registrarServiceWorker();

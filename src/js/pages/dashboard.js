@@ -8,8 +8,10 @@ import {
   obtenerPocoDifundidas,
   obtenerCrisis,
   resumirPorCategoria,
-  resumirPorPais
+  resumirPorPais,
+  registrarNoticias
 } from '../services/newsService.js';
+import { obtenerEstados } from '../services/offlineService.js';
 import {
   crearBannerDemostracion,
   crearEstadisticas,
@@ -37,6 +39,9 @@ export async function renderDashboard(contenedor) {
     return;
   }
 
+  registrarNoticias(noticias);
+  const estados = await obtenerEstados(noticias.map((n) => n.id));
+
   const recientes = ordenarPorFecha(noticias).slice(0, 3);
   const destacadas = ordenarPorRelevancia(noticias).slice(0, 3);
   const pocoDifundidas = obtenerPocoDifundidas(noticias).slice(0, 3);
@@ -56,10 +61,10 @@ export async function renderDashboard(contenedor) {
       totalPaises: paises.filter((p) => p.pais !== 'Global').length,
       actualizadaEn: generadoEn
     })}
-    ${crearSeccion({ titulo: 'Noticias destacadas', icono: 'bi-star', noticias: destacadas })}
-    ${crearSeccion({ titulo: 'Noticias poco difundidas', icono: 'bi-broadcast-pin', noticias: pocoDifundidas })}
-    ${crearSeccion({ titulo: 'Crisis económicas', icono: 'bi-exclamation-triangle', noticias: crisis })}
-    ${crearSeccion({ titulo: 'Noticias recientes', icono: 'bi-clock-history', noticias: recientes })}
+    ${crearSeccion({ titulo: 'Noticias destacadas', icono: 'bi-star', noticias: destacadas, estados })}
+    ${crearSeccion({ titulo: 'Noticias poco difundidas', icono: 'bi-broadcast-pin', noticias: pocoDifundidas, estados })}
+    ${crearSeccion({ titulo: 'Crisis económicas', icono: 'bi-exclamation-triangle', noticias: crisis, estados })}
+    ${crearSeccion({ titulo: 'Noticias recientes', icono: 'bi-clock-history', noticias: recientes, estados })}
     ${crearPanelPaises(paises)}
     ${crearPanelGrafica()}`;
 

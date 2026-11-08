@@ -22,10 +22,13 @@
 ## Uso sin conexión
 
 1. Abre la aplicación con conexión al menos una vez (se guardan el app shell
-   y las últimas noticias).
-2. A partir de la FASE 2 podrás descargar noticias y favoritos al
-   almacenamiento local (IndexedDB) para consultarlos sin internet.
-3. Al recuperar la conexión, vuelve a abrir la app para sincronizar.
+   y el catálogo de noticias).
+2. Marca favoritos (★) o guarda noticias en **Mi biblioteca** (🔖): quedan en
+   el almacenamiento local (IndexedDB) y puedes leer sus resúmenes sin
+   internet.
+3. Sin conexión, el detalle de cada noticia indica si el contenido está
+   guardado en el dispositivo o si podría no estar disponible.
+4. Al recuperar la conexión, vuelve a abrir la app para sincronizar.
 
 > Los enlaces a los artículos originales abren sitios externos y siempre
 > requieren conexión a Internet.

@@ -46,3 +46,19 @@ export function resumirPorPais(noticias) {
     .map(([pais, total]) => ({ pais, total }))
     .sort((a, b) => b.total - a.total);
 }
+
+// Registro en memoria de las noticias renderizadas, para resolver las
+// acciones de las tarjetas (favorito, guardar, detalle) por identificador.
+const registroNoticias = new Map();
+
+export function registrarNoticias(lista) {
+  for (const noticia of lista ?? []) {
+    if (noticia?.id != null) {
+      registroNoticias.set(String(noticia.id), noticia);
+    }
+  }
+}
+
+export function obtenerNoticiaPorId(id) {
+  return registroNoticias.get(String(id)) ?? null;
+}
