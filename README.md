@@ -125,15 +125,14 @@ otros). Detalles en [docs/fuentes.md](docs/fuentes.md).
 |------|-----------|--------|
 | 1 | Proyecto Vite, estructura, diseño, manifest, Service Worker, GitHub Pages, README | ✅ Completada |
 | 2 | IndexedDB, favoritos, biblioteca, historial, modo offline | ✅ Completada |
-| 3 | Recopilador Node.js, GDELT, RSS oficiales, `news.json`, Actions cada 6 h | ⏳ Pendiente |
-| 4 | Dashboard completo, noticias, filtros, países, categorías, búsqueda | ⏳ Pendiente |
+| 3 | Recopilador Node.js, GDELT, RSS oficiales, `news.json`, Actions cada 6 h | ✅ Completada |
+| 4 | Dashboard, centro de noticias, filtros, búsqueda, expedientes por país | ✅ Completada |
 | 5 | UNDERREPORTED RADAR, agrupación, puntuación, cronologías | ⏳ Pendiente |
 | 6 | Compartir (X, WhatsApp), experiencia móvil, pruebas, publicación | ⏳ Pendiente |
 
-> **Nota (FASES 1-2):** las noticias mostradas son **datos de demostración
-> claramente identificados** (insignia `DEMO` y aviso en el dashboard). No
-> corresponden a acontecimientos reales. El recopilador automático llega en
-> la FASE 3.
+> **Nota:** desde la FASE 3 el catálogo se genera automáticamente con
+> noticias reales de GDELT, BCE, Fed, SEC y BIS. Los datos de demostración
+> de la FASE 1 fueron eliminados del catálogo de producción.
 
 ## Reglas del proyecto
 

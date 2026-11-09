@@ -4,6 +4,7 @@
 import { Modal } from 'bootstrap';
 import { registrarLectura } from '../storage/historyRepository.js';
 import { obtenerEstadoNoticia, estaEnLinea } from '../services/offlineService.js';
+import { obtenerCatalogo, obtenerRelacionadas, registrarNoticias } from '../services/newsService.js';
 import { escapar, formatearFecha, claseRelevancia } from './utils.js';
 
 let modalEl = null;
@@ -98,7 +99,44 @@ export async function abrirDetalleNoticia(noticia) {
       <div><dt>Fuente</dt><dd>${escapar(noticia.fuente)}</dd></div>
       <div><dt>Publicada</dt><dd>${formatearFecha(noticia.publicadaEn)}</dd></div>
       ${noticia.tipoContenido ? `<div><dt>Tipo de contenido</dt><dd>${escapar(noticia.tipoContenido)}</dd></div>` : ''}
-    </dl>`;
+      ${noticia.idioma ? `<div><dt>Idioma</dt><dd>${escapar(noticia.idioma)}</dd></div>` : ''}
+    </dl>
+    ${(noticia.palabrasClave ?? []).length ? `
+      <div class="rf-detalle-seccion">
+        <dt>Palabras clave</dt>
+        <div class="d-flex flex-wrap gap-1 mt-1">
+          ${noticia.palabrasClave.map((k) => `<span class="rf-chip-pais rf-chip-sm">${escapar(k)}</span>`).join('')}
+        </div>
+      </div>` : ''}
+    ${(noticia.entidades ?? []).length ? `
+      <div class="rf-detalle-seccion">
+        <dt>Entidades</dt>
+        <div class="d-flex flex-wrap gap-1 mt-1">
+          ${noticia.entidades.map((e) => `<span class="rf-chip-pais rf-chip-sm">${escapar(e)}</span>`).join('')}
+        </div>
+      </div>` : ''}
+    ${(() => {
+      const relacionadas = obtenerRelacionadas(obtenerCatalogo(), noticia, 4);
+      if (!relacionadas.length) return '';
+      registrarNoticias(relacionadas);
+      return `
+        <div class="rf-detalle-seccion">
+          <dt>Noticias relacionadas</dt>
+          <ul class="rf-lista mt-2">
+            ${relacionadas
+              .map(
+                (r) => `
+                <li class="rf-lista-item">
+                  <button type="button" class="rf-card-titulo-btn" data-accion="detalle" data-id="${escapar(r.id)}">
+                    ${escapar(r.titulo)}
+                  </button>
+                  <small class="text-rf-muted">${escapar(r.fuente ?? '')}</small>
+                </li>`
+              )
+              .join('')}
+          </ul>
+        </div>`;
+    })()}`;
 
   el.querySelector('[data-rf-detalle-pie]').innerHTML = `
     <button type="button" class="rf-btn-tarjeta ${estado.esFavorito ? 'active' : ''}"

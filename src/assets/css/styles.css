@@ -639,6 +639,84 @@ body {
   font-size: 0.85rem;
 }
 
+/* ---------- Filtros ---------- */
+
+.rf-filtro-label {
+  font-size: 0.75rem;
+  color: var(--rf-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+/* ---------- Cronología ---------- */
+
+.rf-cronologia {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.rf-cronologia::before {
+  content: '';
+  position: absolute;
+  left: 0.35rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: var(--rf-border);
+}
+
+.rf-cronologia-item {
+  position: relative;
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.rf-cronologia-item::before {
+  content: '';
+  position: absolute;
+  left: -1.05rem;
+  top: 0.85rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--rf-accent);
+  border: 2px solid var(--rf-bg);
+}
+
+.rf-cronologia-fecha {
+  font-size: 0.75rem;
+  color: var(--rf-muted);
+}
+
+.rf-cronologia-contenido {
+  font-size: 0.9rem;
+}
+
+/* ---------- Detalle de noticia ---------- */
+
+.rf-detalle-seccion {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rf-border);
+}
+
+.rf-detalle-seccion dt {
+  color: var(--rf-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.rf-chip-sm {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+}
+
 /* ---------- Controles de formulario en tema oscuro ---------- */
 
 .form-control,

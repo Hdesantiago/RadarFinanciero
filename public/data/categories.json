@@ -1,4 +1,25 @@
 {
-  "generadoEn": "2026-11-08T23:41:43.778Z",
-  "categorias": []
+  "generadoEn": "2026-11-08T23:59:14.280Z",
+  "categorias": [
+    {
+      "categoria": "Bancos centrales",
+      "total": 44
+    },
+    {
+      "categoria": "Regulación financiera",
+      "total": 22
+    },
+    {
+      "categoria": "Endeudamiento público",
+      "total": 6
+    },
+    {
+      "categoria": "Finanzas corporativas",
+      "total": 2
+    },
+    {
+      "categoria": "Riesgo sistémico",
+      "total": 1
+    }
+  ]
 }
