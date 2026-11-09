@@ -1,5 +1,5 @@
 {
-  "generadoEn": "2026-11-09T05:38:33.422Z",
+  "generadoEn": "2026-11-09T15:50:39.572Z",
   "paises": [
     {
       "pais": "Estados Unidos",
@@ -25,12 +25,13 @@
     {
       "pais": "Francia",
       "region": "Global",
-      "total": 8,
+      "total": 11,
       "categorias": [
         "Bancos centrales",
-        "Endeudamiento público"
+        "Endeudamiento público",
+        "Crisis de deuda soberana"
       ],
-      "ultimaNoticia": "2026-11-08T23:53:38.160Z"
+      "ultimaNoticia": "2026-11-09T15:43:03.522Z"
     },
     {
       "pais": "Global",
@@ -41,6 +42,15 @@
         "Bancos centrales"
       ],
       "ultimaNoticia": "2026-10-30T11:50:00.000Z"
+    },
+    {
+      "pais": "Japón",
+      "region": "Asia",
+      "total": 3,
+      "categorias": [
+        "Endeudamiento público"
+      ],
+      "ultimaNoticia": "2026-11-09T15:43:32.059Z"
     },
     {
       "pais": "Alemania",
@@ -59,15 +69,6 @@
         "Bancos centrales"
       ],
       "ultimaNoticia": "2024-07-09T17:27:35.000Z"
-    },
-    {
-      "pais": "Japón",
-      "region": "Asia",
-      "total": 1,
-      "categorias": [
-        "Endeudamiento público"
-      ],
-      "ultimaNoticia": "2026-11-08T23:54:02.665Z"
     }
   ]
 }

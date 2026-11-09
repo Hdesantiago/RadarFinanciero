@@ -1,5 +1,5 @@
 {
-  "generadoEn": "2026-11-09T05:38:33.422Z",
+  "generadoEn": "2026-11-09T15:50:39.572Z",
   "categorias": [
     {
       "categoria": "Bancos centrales",
@@ -11,7 +11,7 @@
     },
     {
       "categoria": "Endeudamiento público",
-      "total": 6
+      "total": 10
     },
     {
       "categoria": "Finanzas corporativas",
@@ -19,6 +19,10 @@
     },
     {
       "categoria": "Riesgo sistémico",
+      "total": 1
+    },
+    {
+      "categoria": "Crisis de deuda soberana",
       "total": 1
     }
   ]

@@ -1,38 +1,38 @@
 {
-  "generadoEn": "2026-11-09T05:38:33.422Z",
+  "generadoEn": "2026-11-09T15:50:39.572Z",
   "fuentes": [
     {
       "id": "gdelt",
       "nombre": "GDELT Project",
       "estado": "ok",
-      "registros": 0,
-      "errores": 16,
-      "ultimaRespuesta": "2026-11-09T05:38:29.992Z",
+      "registros": 8,
+      "errores": 14,
+      "ultimaRespuesta": "2026-11-09T15:50:38.060Z",
       "detalleErrores": [
         {
           "fuente": "gdelt",
           "tema": "crisis-deuda-soberana",
-          "error": "fetch failed"
-        },
-        {
-          "fuente": "gdelt",
-          "tema": "deuda-francia",
-          "error": "fetch failed"
-        },
-        {
-          "fuente": "gdelt",
-          "tema": "deuda-japon",
-          "error": "fetch failed"
+          "error": "HTTP 429 Too Many Requests"
         },
         {
           "fuente": "gdelt",
           "tema": "deficit-fiscal-europeo",
-          "error": "fetch failed"
+          "error": "HTTP 429 Too Many Requests"
         },
         {
           "fuente": "gdelt",
           "tema": "crisis-bancaria",
-          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
+          "error": "HTTP 429 Too Many Requests"
+        },
+        {
+          "fuente": "gdelt",
+          "tema": "bonos-soberanos",
+          "error": "fetch failed"
+        },
+        {
+          "fuente": "gdelt",
+          "tema": "riesgo-impago",
+          "error": "fetch failed"
         }
       ]
     },
@@ -41,28 +41,28 @@
       "nombre": "Reserva Federal de EE. UU.",
       "estado": "ok",
       "registros": 20,
-      "ultimaRespuesta": "2026-11-09T05:38:30.089Z"
+      "ultimaRespuesta": "2026-11-09T15:50:38.155Z"
     },
     {
       "id": "bce",
       "nombre": "Banco Central Europeo",
       "estado": "ok",
       "registros": 15,
-      "ultimaRespuesta": "2026-11-09T05:38:30.784Z"
+      "ultimaRespuesta": "2026-11-09T15:50:38.632Z"
     },
     {
       "id": "bis",
       "nombre": "Bank for International Settlements",
       "estado": "ok",
       "registros": 10,
-      "ultimaRespuesta": "2026-11-09T05:38:33.279Z"
+      "ultimaRespuesta": "2026-11-09T15:50:39.396Z"
     },
     {
       "id": "sec",
       "nombre": "Comisión de Bolsa y Valores de EE. UU. (SEC)",
       "estado": "ok",
       "registros": 25,
-      "ultimaRespuesta": "2026-11-09T05:38:33.401Z"
+      "ultimaRespuesta": "2026-11-09T15:50:39.531Z"
     }
   ]
 }
