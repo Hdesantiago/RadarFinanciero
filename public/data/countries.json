@@ -1,5 +1,5 @@
 {
-  "generadoEn": "2026-11-09T15:50:39.572Z",
+  "generadoEn": "2026-11-10T01:28:46.642Z",
   "paises": [
     {
       "pais": "Estados Unidos",
@@ -11,7 +11,7 @@
         "Finanzas corporativas",
         "Endeudamiento público"
       ],
-      "ultimaNoticia": "2026-11-05T16:00:00.000Z"
+      "ultimaNoticia": "2026-11-09T21:00:00.000Z"
     },
     {
       "pais": "Zona euro",
@@ -46,11 +46,11 @@
     {
       "pais": "Japón",
       "region": "Asia",
-      "total": 3,
+      "total": 4,
       "categorias": [
         "Endeudamiento público"
       ],
-      "ultimaNoticia": "2026-11-09T15:43:32.059Z"
+      "ultimaNoticia": "2026-11-10T01:22:33.472Z"
     },
     {
       "pais": "Alemania",
