@@ -1,5 +1,5 @@
 {
-  "generadoEn": "2026-11-12T15:00:13.171Z",
+  "generadoEn": "2026-11-12T23:30:25.794Z",
   "fuentes": [
     {
       "id": "gdelt",
@@ -7,7 +7,7 @@
       "estado": "ok",
       "registros": 1,
       "errores": 15,
-      "ultimaRespuesta": "2026-11-12T15:00:11.540Z",
+      "ultimaRespuesta": "2026-11-12T23:30:21.179Z",
       "detalleErrores": [
         {
           "fuente": "gdelt",
@@ -17,7 +17,7 @@
         {
           "fuente": "gdelt",
           "tema": "deuda-francia",
-          "error": "HTTP 429 Too Many Requests"
+          "error": "Timeout tras 20000ms"
         },
         {
           "fuente": "gdelt",
@@ -27,7 +27,7 @@
         {
           "fuente": "gdelt",
           "tema": "crisis-bancaria",
-          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
+          "error": "HTTP 429 Too Many Requests"
         },
         {
           "fuente": "gdelt",
@@ -41,28 +41,28 @@
       "nombre": "Reserva Federal de EE. UU.",
       "estado": "ok",
       "registros": 20,
-      "ultimaRespuesta": "2026-11-12T15:00:11.598Z"
+      "ultimaRespuesta": "2026-11-12T23:30:24.294Z"
     },
     {
       "id": "bce",
       "nombre": "Banco Central Europeo",
       "estado": "ok",
       "registros": 15,
-      "ultimaRespuesta": "2026-11-12T15:00:12.219Z"
+      "ultimaRespuesta": "2026-11-12T23:30:24.890Z"
     },
     {
       "id": "bis",
       "nombre": "Bank for International Settlements",
       "estado": "ok",
       "registros": 10,
-      "ultimaRespuesta": "2026-11-12T15:00:13.106Z"
+      "ultimaRespuesta": "2026-11-12T23:30:25.690Z"
     },
     {
       "id": "sec",
       "nombre": "Comisión de Bolsa y Valores de EE. UU. (SEC)",
       "estado": "ok",
       "registros": 25,
-      "ultimaRespuesta": "2026-11-12T15:00:13.135Z"
+      "ultimaRespuesta": "2026-11-12T23:30:25.755Z"
     }
   ]
 }
