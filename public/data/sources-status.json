@@ -1,28 +1,28 @@
 {
-  "generadoEn": "2026-11-12T00:25:51.469Z",
+  "generadoEn": "2026-11-12T15:00:13.171Z",
   "fuentes": [
     {
       "id": "gdelt",
       "nombre": "GDELT Project",
       "estado": "ok",
-      "registros": 0,
+      "registros": 1,
       "errores": 15,
-      "ultimaRespuesta": "2026-11-12T00:25:50.223Z",
+      "ultimaRespuesta": "2026-11-12T15:00:11.540Z",
       "detalleErrores": [
         {
           "fuente": "gdelt",
           "tema": "crisis-deuda-soberana",
-          "error": "fetch failed"
+          "error": "HTTP 429 Too Many Requests"
         },
         {
           "fuente": "gdelt",
           "tema": "deuda-francia",
-          "error": "fetch failed"
+          "error": "HTTP 429 Too Many Requests"
         },
         {
           "fuente": "gdelt",
           "tema": "deficit-fiscal-europeo",
-          "error": "fetch failed"
+          "error": "HTTP 429 Too Many Requests"
         },
         {
           "fuente": "gdelt",
@@ -41,28 +41,28 @@
       "nombre": "Reserva Federal de EE. UU.",
       "estado": "ok",
       "registros": 20,
-      "ultimaRespuesta": "2026-11-12T00:25:50.294Z"
+      "ultimaRespuesta": "2026-11-12T15:00:11.598Z"
     },
     {
       "id": "bce",
       "nombre": "Banco Central Europeo",
       "estado": "ok",
       "registros": 15,
-      "ultimaRespuesta": "2026-11-12T00:25:50.761Z"
+      "ultimaRespuesta": "2026-11-12T15:00:12.219Z"
     },
     {
       "id": "bis",
       "nombre": "Bank for International Settlements",
       "estado": "ok",
       "registros": 10,
-      "ultimaRespuesta": "2026-11-12T00:25:51.335Z"
+      "ultimaRespuesta": "2026-11-12T15:00:13.106Z"
     },
     {
       "id": "sec",
       "nombre": "Comisión de Bolsa y Valores de EE. UU. (SEC)",
       "estado": "ok",
       "registros": 25,
-      "ultimaRespuesta": "2026-11-12T00:25:51.440Z"
+      "ultimaRespuesta": "2026-11-12T15:00:13.135Z"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generadoEn": "2026-11-12T00:25:51.468Z",
+  "generadoEn": "2026-11-12T15:00:13.170Z",
   "paises": [
     {
       "pais": "Estados Unidos",
@@ -34,6 +34,15 @@
       "ultimaNoticia": "2026-11-11T05:28:52.183Z"
     },
     {
+      "pais": "Japón",
+      "region": "Asia",
+      "total": 5,
+      "categorias": [
+        "Endeudamiento público"
+      ],
+      "ultimaNoticia": "2026-11-12T14:54:49.155Z"
+    },
+    {
       "pais": "Global",
       "region": "Global",
       "total": 4,
@@ -42,15 +51,6 @@
         "Bancos centrales"
       ],
       "ultimaNoticia": "2026-10-30T11:50:00.000Z"
-    },
-    {
-      "pais": "Japón",
-      "region": "Asia",
-      "total": 4,
-      "categorias": [
-        "Endeudamiento público"
-      ],
-      "ultimaNoticia": "2026-11-10T01:22:33.472Z"
     },
     {
       "pais": "Alemania",
