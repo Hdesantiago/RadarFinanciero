@@ -1,23 +1,18 @@
 {
-  "generadoEn": "2026-11-12T23:30:25.794Z",
+  "generadoEn": "2026-11-13T06:01:05.716Z",
   "fuentes": [
     {
       "id": "gdelt",
       "nombre": "GDELT Project",
       "estado": "ok",
-      "registros": 1,
-      "errores": 15,
-      "ultimaRespuesta": "2026-11-12T23:30:21.179Z",
+      "registros": 7,
+      "errores": 14,
+      "ultimaRespuesta": "2026-11-13T06:01:02.497Z",
       "detalleErrores": [
         {
           "fuente": "gdelt",
           "tema": "crisis-deuda-soberana",
-          "error": "HTTP 429 Too Many Requests"
-        },
-        {
-          "fuente": "gdelt",
-          "tema": "deuda-francia",
-          "error": "Timeout tras 20000ms"
+          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
         },
         {
           "fuente": "gdelt",
@@ -32,6 +27,11 @@
         {
           "fuente": "gdelt",
           "tema": "bonos-soberanos",
+          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
+        },
+        {
+          "fuente": "gdelt",
+          "tema": "riesgo-impago",
           "error": "HTTP 429 Too Many Requests"
         }
       ]
@@ -41,28 +41,28 @@
       "nombre": "Reserva Federal de EE. UU.",
       "estado": "ok",
       "registros": 20,
-      "ultimaRespuesta": "2026-11-12T23:30:24.294Z"
+      "ultimaRespuesta": "2026-11-13T06:01:02.592Z"
     },
     {
       "id": "bce",
       "nombre": "Banco Central Europeo",
       "estado": "ok",
       "registros": 15,
-      "ultimaRespuesta": "2026-11-12T23:30:24.890Z"
+      "ultimaRespuesta": "2026-11-13T06:01:03.255Z"
     },
     {
       "id": "bis",
       "nombre": "Bank for International Settlements",
       "estado": "ok",
       "registros": 10,
-      "ultimaRespuesta": "2026-11-12T23:30:25.690Z"
+      "ultimaRespuesta": "2026-11-13T06:01:05.613Z"
     },
     {
       "id": "sec",
       "nombre": "Comisión de Bolsa y Valores de EE. UU. (SEC)",
       "estado": "ok",
       "registros": 25,
-      "ultimaRespuesta": "2026-11-12T23:30:25.755Z"
+      "ultimaRespuesta": "2026-11-13T06:01:05.685Z"
     }
   ]
 }
