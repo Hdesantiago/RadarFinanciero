@@ -1,18 +1,18 @@
 {
-  "generadoEn": "2026-11-13T14:26:29.665Z",
+  "generadoEn": "2026-11-13T23:32:38.135Z",
   "fuentes": [
     {
       "id": "gdelt",
       "nombre": "GDELT Project",
       "estado": "ok",
-      "registros": 2,
-      "errores": 15,
-      "ultimaRespuesta": "2026-11-13T14:26:26.351Z",
+      "registros": 0,
+      "errores": 16,
+      "ultimaRespuesta": "2026-11-13T23:32:34.358Z",
       "detalleErrores": [
         {
           "fuente": "gdelt",
           "tema": "crisis-deuda-soberana",
-          "error": "fetch failed"
+          "error": "HTTP 429 Too Many Requests"
         },
         {
           "fuente": "gdelt",
@@ -21,18 +21,18 @@
         },
         {
           "fuente": "gdelt",
+          "tema": "deuda-japon",
+          "error": "HTTP 429 Too Many Requests"
+        },
+        {
+          "fuente": "gdelt",
           "tema": "deficit-fiscal-europeo",
-          "error": "fetch failed"
+          "error": "HTTP 429 Too Many Requests"
         },
         {
           "fuente": "gdelt",
           "tema": "crisis-bancaria",
-          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
-        },
-        {
-          "fuente": "gdelt",
-          "tema": "bonos-soberanos",
-          "error": "fetch failed"
+          "error": "HTTP 429 Too Many Requests"
         }
       ]
     },
@@ -41,28 +41,28 @@
       "nombre": "Reserva Federal de EE. UU.",
       "estado": "ok",
       "registros": 20,
-      "ultimaRespuesta": "2026-11-13T14:26:26.395Z"
+      "ultimaRespuesta": "2026-11-13T23:32:34.486Z"
     },
     {
       "id": "bce",
       "nombre": "Banco Central Europeo",
       "estado": "ok",
       "registros": 15,
-      "ultimaRespuesta": "2026-11-13T14:26:26.962Z"
+      "ultimaRespuesta": "2026-11-13T23:32:34.952Z"
     },
     {
       "id": "bis",
       "nombre": "Bank for International Settlements",
       "estado": "ok",
       "registros": 10,
-      "ultimaRespuesta": "2026-11-13T14:26:29.587Z"
+      "ultimaRespuesta": "2026-11-13T23:32:37.717Z"
     },
     {
       "id": "sec",
       "nombre": "Comisión de Bolsa y Valores de EE. UU. (SEC)",
       "estado": "ok",
       "registros": 25,
-      "ultimaRespuesta": "2026-11-13T14:26:29.626Z"
+      "ultimaRespuesta": "2026-11-13T23:32:38.112Z"
     }
   ]
 }
