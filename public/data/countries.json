@@ -1,5 +1,5 @@
 {
-  "generadoEn": "2026-11-13T06:01:05.715Z",
+  "generadoEn": "2026-11-13T14:26:29.664Z",
   "paises": [
     {
       "pais": "Estados Unidos",
@@ -14,9 +14,18 @@
       "ultimaNoticia": "2026-11-12T18:30:00.000Z"
     },
     {
+      "pais": "Zona euro",
+      "region": "Zona euro",
+      "total": 18,
+      "categorias": [
+        "Bancos centrales"
+      ],
+      "ultimaNoticia": "2026-11-13T07:20:00.000Z"
+    },
+    {
       "pais": "Francia",
       "region": "Global",
-      "total": 18,
+      "total": 16,
       "categorias": [
         "Bancos centrales",
         "Endeudamiento público",
@@ -25,22 +34,13 @@
       "ultimaNoticia": "2026-11-13T05:53:35.027Z"
     },
     {
-      "pais": "Zona euro",
-      "region": "Zona euro",
-      "total": 17,
-      "categorias": [
-        "Bancos centrales"
-      ],
-      "ultimaNoticia": "2026-11-10T16:45:00.000Z"
-    },
-    {
       "pais": "Japón",
       "region": "Asia",
-      "total": 5,
+      "total": 7,
       "categorias": [
         "Endeudamiento público"
       ],
-      "ultimaNoticia": "2026-11-13T05:54:15.715Z"
+      "ultimaNoticia": "2026-11-13T14:19:45.247Z"
     },
     {
       "pais": "Global",
