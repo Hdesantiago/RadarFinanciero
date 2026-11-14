@@ -1,13 +1,13 @@
 {
-  "generadoEn": "2026-11-14T05:48:26.740Z",
+  "generadoEn": "2026-11-14T13:21:24.680Z",
   "fuentes": [
     {
       "id": "gdelt",
       "nombre": "GDELT Project",
       "estado": "ok",
       "registros": 0,
-      "errores": 15,
-      "ultimaRespuesta": "2026-11-14T05:48:25.267Z",
+      "errores": 16,
+      "ultimaRespuesta": "2026-11-14T13:21:20.490Z",
       "detalleErrores": [
         {
           "fuente": "gdelt",
@@ -16,8 +16,13 @@
         },
         {
           "fuente": "gdelt",
-          "tema": "deuda-japon",
+          "tema": "deuda-francia",
           "error": "HTTP 429 Too Many Requests"
+        },
+        {
+          "fuente": "gdelt",
+          "tema": "deuda-japon",
+          "error": "fetch failed"
         },
         {
           "fuente": "gdelt",
@@ -27,12 +32,7 @@
         {
           "fuente": "gdelt",
           "tema": "crisis-bancaria",
-          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
-        },
-        {
-          "fuente": "gdelt",
-          "tema": "bonos-soberanos",
-          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
+          "error": "HTTP 429 Too Many Requests"
         }
       ]
     },
@@ -41,28 +41,28 @@
       "nombre": "Reserva Federal de EE. UU.",
       "estado": "ok",
       "registros": 20,
-      "ultimaRespuesta": "2026-11-14T05:48:25.316Z"
+      "ultimaRespuesta": "2026-11-14T13:21:20.532Z"
     },
     {
       "id": "bce",
       "nombre": "Banco Central Europeo",
       "estado": "ok",
       "registros": 15,
-      "ultimaRespuesta": "2026-11-14T05:48:25.808Z"
+      "ultimaRespuesta": "2026-11-14T13:21:20.889Z"
     },
     {
       "id": "bis",
       "nombre": "Bank for International Settlements",
       "estado": "ok",
       "registros": 10,
-      "ultimaRespuesta": "2026-11-14T05:48:26.654Z"
+      "ultimaRespuesta": "2026-11-14T13:21:24.577Z"
     },
     {
       "id": "sec",
       "nombre": "Comisión de Bolsa y Valores de EE. UU. (SEC)",
       "estado": "ok",
       "registros": 25,
-      "ultimaRespuesta": "2026-11-14T05:48:26.714Z"
+      "ultimaRespuesta": "2026-11-14T13:21:24.644Z"
     }
   ]
 }
