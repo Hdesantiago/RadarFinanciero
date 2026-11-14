@@ -1,22 +1,17 @@
 {
-  "generadoEn": "2026-11-13T23:32:38.135Z",
+  "generadoEn": "2026-11-14T05:48:26.740Z",
   "fuentes": [
     {
       "id": "gdelt",
       "nombre": "GDELT Project",
       "estado": "ok",
       "registros": 0,
-      "errores": 16,
-      "ultimaRespuesta": "2026-11-13T23:32:34.358Z",
+      "errores": 15,
+      "ultimaRespuesta": "2026-11-14T05:48:25.267Z",
       "detalleErrores": [
         {
           "fuente": "gdelt",
           "tema": "crisis-deuda-soberana",
-          "error": "HTTP 429 Too Many Requests"
-        },
-        {
-          "fuente": "gdelt",
-          "tema": "deuda-francia",
           "error": "HTTP 429 Too Many Requests"
         },
         {
@@ -32,7 +27,12 @@
         {
           "fuente": "gdelt",
           "tema": "crisis-bancaria",
-          "error": "HTTP 429 Too Many Requests"
+          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
+        },
+        {
+          "fuente": "gdelt",
+          "tema": "bonos-soberanos",
+          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
         }
       ]
     },
@@ -41,28 +41,28 @@
       "nombre": "Reserva Federal de EE. UU.",
       "estado": "ok",
       "registros": 20,
-      "ultimaRespuesta": "2026-11-13T23:32:34.486Z"
+      "ultimaRespuesta": "2026-11-14T05:48:25.316Z"
     },
     {
       "id": "bce",
       "nombre": "Banco Central Europeo",
       "estado": "ok",
       "registros": 15,
-      "ultimaRespuesta": "2026-11-13T23:32:34.952Z"
+      "ultimaRespuesta": "2026-11-14T05:48:25.808Z"
     },
     {
       "id": "bis",
       "nombre": "Bank for International Settlements",
       "estado": "ok",
       "registros": 10,
-      "ultimaRespuesta": "2026-11-13T23:32:37.717Z"
+      "ultimaRespuesta": "2026-11-14T05:48:26.654Z"
     },
     {
       "id": "sec",
       "nombre": "Comisión de Bolsa y Valores de EE. UU. (SEC)",
       "estado": "ok",
       "registros": 25,
-      "ultimaRespuesta": "2026-11-13T23:32:38.112Z"
+      "ultimaRespuesta": "2026-11-14T05:48:26.714Z"
     }
   ]
 }
