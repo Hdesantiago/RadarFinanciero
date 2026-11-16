@@ -1,5 +1,5 @@
 {
-  "generadoEn": "2026-11-16T05:47:11.274Z",
+  "generadoEn": "2026-11-16T15:23:38.217Z",
   "paises": [
     {
       "pais": "Estados Unidos",
@@ -16,11 +16,11 @@
     {
       "pais": "Zona euro",
       "region": "Zona euro",
-      "total": 18,
+      "total": 20,
       "categorias": [
         "Bancos centrales"
       ],
-      "ultimaNoticia": "2026-11-13T07:20:00.000Z"
+      "ultimaNoticia": "2026-11-16T13:00:00.000Z"
     },
     {
       "pais": "Francia",
