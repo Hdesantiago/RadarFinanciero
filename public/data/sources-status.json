@@ -1,23 +1,18 @@
 {
-  "generadoEn": "2026-11-17T01:54:01.624Z",
+  "generadoEn": "2026-11-17T15:51:03.968Z",
   "fuentes": [
     {
       "id": "gdelt",
       "nombre": "GDELT Project",
       "estado": "ok",
       "registros": 0,
-      "errores": 16,
-      "ultimaRespuesta": "2026-11-17T01:53:59.944Z",
+      "errores": 15,
+      "ultimaRespuesta": "2026-11-17T15:51:02.579Z",
       "detalleErrores": [
         {
           "fuente": "gdelt",
           "tema": "crisis-deuda-soberana",
           "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
-        },
-        {
-          "fuente": "gdelt",
-          "tema": "deuda-francia",
-          "error": "fetch failed"
         },
         {
           "fuente": "gdelt",
@@ -32,7 +27,12 @@
         {
           "fuente": "gdelt",
           "tema": "crisis-bancaria",
-          "error": "HTTP 429 Too Many Requests"
+          "error": "fetch failed"
+        },
+        {
+          "fuente": "gdelt",
+          "tema": "bonos-soberanos",
+          "error": "fetch failed"
         }
       ]
     },
@@ -41,28 +41,28 @@
       "nombre": "Reserva Federal de EE. UU.",
       "estado": "ok",
       "registros": 20,
-      "ultimaRespuesta": "2026-11-17T01:54:00.095Z"
+      "ultimaRespuesta": "2026-11-17T15:51:02.638Z"
     },
     {
       "id": "bce",
       "nombre": "Banco Central Europeo",
       "estado": "ok",
       "registros": 15,
-      "ultimaRespuesta": "2026-11-17T01:54:00.562Z"
+      "ultimaRespuesta": "2026-11-17T15:51:03.063Z"
     },
     {
       "id": "bis",
       "nombre": "Bank for International Settlements",
       "estado": "ok",
       "registros": 10,
-      "ultimaRespuesta": "2026-11-17T01:54:01.534Z"
+      "ultimaRespuesta": "2026-11-17T15:51:03.781Z"
     },
     {
       "id": "sec",
       "nombre": "Comisión de Bolsa y Valores de EE. UU. (SEC)",
       "estado": "ok",
       "registros": 25,
-      "ultimaRespuesta": "2026-11-17T01:54:01.597Z"
+      "ultimaRespuesta": "2026-11-17T15:51:03.937Z"
     }
   ]
 }
