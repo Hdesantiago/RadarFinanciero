@@ -1,5 +1,5 @@
 {
-  "generadoEn": "2026-11-21T06:30:56.042Z",
+  "generadoEn": "2026-11-21T18:59:50.080Z",
   "paises": [
     {
       "pais": "Estados Unidos",
@@ -26,13 +26,13 @@
     {
       "pais": "Francia",
       "region": "Global",
-      "total": 19,
+      "total": 24,
       "categorias": [
         "Bancos centrales",
         "Endeudamiento público",
         "Crisis de deuda soberana"
       ],
-      "ultimaNoticia": "2026-11-20T23:50:37.993Z"
+      "ultimaNoticia": "2026-11-21T18:54:32.889Z"
     },
     {
       "pais": "Japón",
