@@ -1,13 +1,13 @@
 {
-  "generadoEn": "2026-11-21T18:59:50.082Z",
+  "generadoEn": "2026-11-22T05:59:31.706Z",
   "fuentes": [
     {
       "id": "gdelt",
       "nombre": "GDELT Project",
       "estado": "ok",
-      "registros": 7,
+      "registros": 5,
       "errores": 15,
-      "ultimaRespuesta": "2026-11-21T18:59:47.549Z",
+      "ultimaRespuesta": "2026-11-22T05:59:30.051Z",
       "detalleErrores": [
         {
           "fuente": "gdelt",
@@ -22,7 +22,7 @@
         {
           "fuente": "gdelt",
           "tema": "deficit-fiscal-europeo",
-          "error": "Unexpected token 'B', \"Boolean OR\"... is not valid JSON"
+          "error": "HTTP 429 Too Many Requests"
         },
         {
           "fuente": "gdelt",
@@ -32,7 +32,7 @@
         {
           "fuente": "gdelt",
           "tema": "bonos-soberanos",
-          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
+          "error": "HTTP 429 Too Many Requests"
         }
       ]
     },
@@ -41,28 +41,28 @@
       "nombre": "Reserva Federal de EE. UU.",
       "estado": "ok",
       "registros": 20,
-      "ultimaRespuesta": "2026-11-21T18:59:47.608Z"
+      "ultimaRespuesta": "2026-11-22T05:59:30.186Z"
     },
     {
       "id": "bce",
       "nombre": "Banco Central Europeo",
       "estado": "ok",
       "registros": 15,
-      "ultimaRespuesta": "2026-11-21T18:59:48.299Z"
+      "ultimaRespuesta": "2026-11-22T05:59:30.786Z"
     },
     {
       "id": "bis",
       "nombre": "Bank for International Settlements",
       "estado": "ok",
       "registros": 10,
-      "ultimaRespuesta": "2026-11-21T18:59:49.597Z"
+      "ultimaRespuesta": "2026-11-22T05:59:31.493Z"
     },
     {
       "id": "sec",
       "nombre": "Comisión de Bolsa y Valores de EE. UU. (SEC)",
       "estado": "ok",
       "registros": 25,
-      "ultimaRespuesta": "2026-11-21T18:59:50.038Z"
+      "ultimaRespuesta": "2026-11-22T05:59:31.669Z"
     }
   ]
 }
