@@ -1,5 +1,5 @@
 {
-  "generadoEn": "2026-11-25T07:53:28.116Z",
+  "generadoEn": "2026-11-25T21:32:10.497Z",
   "paises": [
     {
       "pais": "Estados Unidos",
@@ -11,28 +11,28 @@
         "Finanzas corporativas",
         "Endeudamiento público"
       ],
-      "ultimaNoticia": "2026-11-24T19:00:00.000Z"
+      "ultimaNoticia": "2026-11-25T20:00:00.000Z"
     },
     {
       "pais": "Zona euro",
       "region": "Zona euro",
-      "total": 27,
+      "total": 28,
       "categorias": [
         "Bancos centrales",
         "Riesgo sistémico"
       ],
-      "ultimaNoticia": "2026-11-24T11:00:00.000Z"
+      "ultimaNoticia": "2026-11-25T17:30:00.000Z"
     },
     {
       "pais": "Francia",
       "region": "Global",
-      "total": 24,
+      "total": 28,
       "categorias": [
         "Bancos centrales",
         "Endeudamiento público",
         "Crisis de deuda soberana"
       ],
-      "ultimaNoticia": "2026-11-22T23:26:17.146Z"
+      "ultimaNoticia": "2026-11-25T21:24:54.772Z"
     },
     {
       "pais": "Japón",
