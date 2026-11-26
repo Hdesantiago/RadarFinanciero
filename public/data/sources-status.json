@@ -1,13 +1,13 @@
 {
-  "generadoEn": "2026-11-25T21:32:10.497Z",
+  "generadoEn": "2026-11-26T07:46:35.087Z",
   "fuentes": [
     {
       "id": "gdelt",
       "nombre": "GDELT Project",
       "estado": "ok",
-      "registros": 4,
+      "registros": 3,
       "errores": 15,
-      "ultimaRespuesta": "2026-11-25T21:32:07.611Z",
+      "ultimaRespuesta": "2026-11-26T07:46:33.590Z",
       "detalleErrores": [
         {
           "fuente": "gdelt",
@@ -16,23 +16,23 @@
         },
         {
           "fuente": "gdelt",
-          "tema": "deuda-japon",
+          "tema": "deuda-francia",
           "error": "HTTP 429 Too Many Requests"
         },
         {
           "fuente": "gdelt",
           "tema": "deficit-fiscal-europeo",
-          "error": "fetch failed"
+          "error": "HTTP 429 Too Many Requests"
         },
         {
           "fuente": "gdelt",
           "tema": "crisis-bancaria",
-          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
+          "error": "fetch failed"
         },
         {
           "fuente": "gdelt",
           "tema": "bonos-soberanos",
-          "error": "Unexpected token 'Q', \"Queries co\"... is not valid JSON"
+          "error": "fetch failed"
         }
       ]
     },
@@ -41,28 +41,28 @@
       "nombre": "Reserva Federal de EE. UU.",
       "estado": "ok",
       "registros": 20,
-      "ultimaRespuesta": "2026-11-25T21:32:07.691Z"
+      "ultimaRespuesta": "2026-11-26T07:46:33.651Z"
     },
     {
       "id": "bce",
       "nombre": "Banco Central Europeo",
       "estado": "ok",
       "registros": 15,
-      "ultimaRespuesta": "2026-11-25T21:32:08.326Z"
+      "ultimaRespuesta": "2026-11-26T07:46:34.019Z"
     },
     {
       "id": "bis",
       "nombre": "Bank for International Settlements",
       "estado": "ok",
       "registros": 10,
-      "ultimaRespuesta": "2026-11-25T21:32:10.377Z"
+      "ultimaRespuesta": "2026-11-26T07:46:35.002Z"
     },
     {
       "id": "sec",
       "nombre": "Comisión de Bolsa y Valores de EE. UU. (SEC)",
       "estado": "ok",
       "registros": 25,
-      "ultimaRespuesta": "2026-11-25T21:32:10.467Z"
+      "ultimaRespuesta": "2026-11-26T07:46:35.048Z"
     }
   ]
 }
